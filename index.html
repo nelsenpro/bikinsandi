@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Kata Sandi Canggih</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="">
+    <button id="themeToggle" class="theme-toggle" aria-label="Aktifkan/Nonaktifkan Tema Gelap">
+        <svg viewBox="0 0 24 24" fill="currentColor" height="1.5em" width="1.5em">
+            <path d="M12 3a9 9 0 0 1 9 9 9 9 0 0 1-9 9 9 9 0 0 1-9-9 9 9 0 0 1 9-9m0 14a5 5 0 0 0 5-5 5 5 0 0 0-5-5 5 5 0 0 0-5 5 5 5 0 0 0 5 5Z"/>
+        </svg>
+    </button>
+    <main class="container">
+        <h1>Generator Kata Sandi</h1>
+        <div class="input-group">
+            <input type="text" id="password" placeholder="Kata Sandi Akan Muncul Di Sini" readonly aria-label="Kata Sandi yang Dihasilkan">
+            <button id="copyBtn" class="btn success" title="Salin ke Clipboard" aria-label="Salin kata sandi ke clipboard">
+                <svg viewBox="0 0 24 24" fill="currentColor" height="1.5em" width="1.5em">
+                    <path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1z"/>
+                </svg>
+            </button>
+            <div class="strength-bar" aria-live="polite" aria-atomic="true" aria-label="Kekuatan Kata Sandi"></div>
+        </div>
+
+        <div class="options">
+            <div class="option">
+                <label for="length">Panjang Kata Sandi:</label>
+                <input type="number" id="length" value="12" min="6" max="30" aria-describedby="length-help">
+                <div id="length-help" class="sr-only">Masukkan panjang kata sandi antara 6 dan 30 karakter.</div>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="uppercase" checked>
+                <label for="uppercase">Huruf Besar (A-Z)</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="lowercase" checked>
+                <label for="lowercase">Huruf Kecil (a-z)</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="numbers" checked>
+                <label for="numbers">Angka (0-9)</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="symbols" checked>
+                <label for="symbols">Simbol (!@#...)</label>
+            </div>
+            <div class="option advanced">
+                <input type="checkbox" id="excludeSimilar">
+                <label for="excludeSimilar">Hindari Karakter Serupa</label>
+            </div>
+        </div>
+
+        <button id="generateBtn" class="btn primary">Buat Kata Sandi Baru</button>
+        <button id="resetBtn" class="btn danger">Reset Pengaturan</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
