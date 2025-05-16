@@ -71,7 +71,7 @@ Proyek ini berada di bawah lisensi MIT.
 
 ## 📫 Kontak
 
-Jika ada pertanyaan atau saran, hubungi: nelsenniiko@example.com
+Jika ada pertanyaan atau saran, hubungi: nelsenniiko@gmail.com
 
 
 ---
