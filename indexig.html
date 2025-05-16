@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="">
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark/Light Theme">
+        <svg viewBox="0 0 24 24" fill="currentColor" height="1.5em" width="1.5em">
+            <path d="M12 3a9 9 0 0 1 9 9 9 9 0 0 1-9 9 9 9 0 0 1-9-9 9 9 0 0 1 9-9m0 14a5 5 0 0 0 5-5 5 5 0 0 0-5-5 5 5 0 0 0-5 5 5 5 0 0 0 5 5Z"/>
+        </svg>
+    </button>
+    <main class="container">
+        <h1>Password Generator</h1>
+        <div class="input-group">
+            <input type="text" id="password" placeholder="Password Will Appear Here" readonly aria-label="Generated Password">
+            <button id="copyBtn" class="btn success" title="Copy to Clipboard" aria-label="Copy password to clipboard">
+                <svg viewBox="0 0 24 24" fill="currentColor" height="1.5em" width="1.5em">
+                    <path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1z"/>
+                </svg>
+            </button>
+            <div class="strength-bar" aria-live="polite" aria-atomic="true" aria-label="Password Strength"></div>
+        </div>
+
+        <div class="options">
+            <div class="option">
+                <label for="length">Password Length:</label>
+                <input type="number" id="length" value="12" min="6" max="30" aria-describedby="length-help">
+                <div id="length-help" class="sr-only">Enter password length between 6 and 30 characters.</div>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="uppercase" checked>
+                <label for="uppercase">Uppercase (A-Z)</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="lowercase" checked>
+                <label for="lowercase">Lowercase (a-z)</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="numbers" checked>
+                <label for="numbers">Numbers (0-9)</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="symbols" checked>
+                <label for="symbols">Symbols (!@#...)</label>
+            </div>
+            <div class="option advanced">
+                <input type="checkbox" id="excludeSimilar">
+                <label for="excludeSimilar">Exclude Similar Characters</label>
+            </div>
+        </div>
+
+        <button id="generateBtn" class="btn primary">Generate New Password</button>
+        <button id="resetBtn" class="btn danger">Reset Settings</button>
+         <br /> <br />
+          <a class="" href="https://nelsenpro.github.io/bikinsandi/index.html">
+        <small>Indonesian</small>
+    </a>
+    </main>
+    <script src="scriptig.js"></script>
+</body>
+</html>
