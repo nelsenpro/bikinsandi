@@ -38,11 +38,6 @@ BikinSandi adalah aplikasi generator kata sandi yang dirancang untuk membantu An
 
 ---
 
-## 📷 Tampilan (Screenshot)
-*Tambahkan tangkapan layar di sini jika tersedia*
-
----
-
 ## 🚀 Instalasi & Penggunaan
 
 1. **Clone repo ini**
