@@ -1,5 +1,5 @@
-# 🔐 BikinSandi
-
+# 🔐 [BikinSandi](https://nelsenpro.github.io/bikinsandi/)
+## [Demo disini](https://nelsenpro.github.io/bikinsandi/)
 **Versi: 1.0**  
 **Developer: Nelsen Niko**
 
